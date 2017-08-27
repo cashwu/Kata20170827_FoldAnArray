@@ -58,12 +58,9 @@ namespace Kata20170827_FoldAnArray
     {
         public int[] FoldArray(int[] array, int runs)
         {
-            var result = new List<int>();
             var halfArrayLength = array.Length / 2;
-            for (var i = 0; i < halfArrayLength; i++)
-            {
-                result.Add(array[i] + array[array.Length - 1 - i]);
-            }
+
+            var result = array.Take(halfArrayLength).Zip(array.Reverse().Take(halfArrayLength), (a, b) => a + b).ToList();
 
             if (array.Length % 2 != 0)
             {
