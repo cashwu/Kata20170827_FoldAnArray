@@ -34,6 +34,12 @@ namespace Kata20170827_FoldAnArray
             FoldArrayShouldBe(new[] { 9, 6 }, new[] { 1, 2, 3, 4, 5 }, 2);
         }
 
+        [TestMethod]
+        public void input_1_2_3_4_5_and_3_should_return_15()
+        {
+            FoldArrayShouldBe(new[] { 15 }, new[] { 1, 2, 3, 4, 5 }, 3);
+        }
+
         private static void FoldArrayShouldBe(int[] expected, int[] array, int runs)
         {
             var kata = new Kata();
