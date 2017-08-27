@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata20170827_FoldAnArray", "Kata20170827_FoldAnArray\Kata20170827_FoldAnArray.csproj", "{C3D3704C-3DDA-415C-B468-751267FD5548}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3D3704C-3DDA-415C-B468-751267FD5548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D3704C-3DDA-415C-B468-751267FD5548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D3704C-3DDA-415C-B468-751267FD5548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D3704C-3DDA-415C-B468-751267FD5548}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08AE888F-4D19-4D80-A4DC-B3871C208A31}
+	EndGlobalSection
+	GlobalSection(CodealikeProperties) = postSolution
+		SolutionGuid = 28d01d33-ea01-4e53-bfce-66f7c07661ba
+	EndGlobalSection
+EndGlobal
