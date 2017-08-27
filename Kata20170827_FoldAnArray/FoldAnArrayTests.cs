@@ -58,24 +58,23 @@ namespace Kata20170827_FoldAnArray
     {
         public int[] FoldArray(int[] array, int runs)
         {
-            for (var num = 1; num <= runs; num++)
+            var result = new List<int>();
+            var halfArrayLength = array.Length / 2;
+            for (var i = 0; i < halfArrayLength; i++)
             {
-                var result = new List<int>();
-                var halfArrayLength = array.Length / 2;
-                for (var i = 0; i < halfArrayLength; i++)
-                {
-                    result.Add(array[i] + array[array.Length - 1 - i]);
-                }
-
-                if (array.Length % 2 != 0)
-                {
-                    result.Add(array[halfArrayLength]);
-                }
-
-                array = result.ToArray();
+                result.Add(array[i] + array[array.Length - 1 - i]);
             }
 
-            return array;
+            if (array.Length % 2 != 0)
+            {
+                result.Add(array[halfArrayLength]);
+            }
+
+            array = result.ToArray();
+
+            runs--;
+
+            return runs == 0 ? array : FoldArray(array, runs);
         }
     }
 }
